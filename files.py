@@ -1,0 +1,1 @@
+test_file = open('D:/python-adi/test.txt', 'w')
