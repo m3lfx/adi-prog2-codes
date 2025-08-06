@@ -1,0 +1,8 @@
+black
+90
+brown
+98
+rice coffee
+100
+barako
+14
