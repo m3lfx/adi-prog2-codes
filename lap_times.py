@@ -3,8 +3,17 @@ def main():
     lap_time(num_laps)
 
 def lap_time(num_laps):
+    ave_laps = 0
     for i in range(num_laps):
-        print(i)
+        #largest
+
+
+        time = float(input("enter your running time"))
+        ave_laps += time
+
+    
+    average = ave_laps / num_laps
+    print("average lap times", average )
 
 
 main()
