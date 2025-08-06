@@ -13,7 +13,7 @@ def compute_rainfall(years):
         
         # total_rainfall += total
     print(f"total rainfall in inches is {total}")
-    print(f"average rainfall in {years} years is {total/years}")
+    print(f"average rainfall in {years} years is {total / years}")
 
 
 main()
