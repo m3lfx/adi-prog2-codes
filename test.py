@@ -1,0 +1,1 @@
+infile = open('sales_data.txt', 'r')
