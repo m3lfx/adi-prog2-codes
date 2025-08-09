@@ -26,4 +26,6 @@ def main():
     print(f"total number of words in the file {num_words}")
     print(f"average length of words in file {ave_wordlength}")
     print(f"the longest word is {long_word} ")
+
+    word_file.close()
 main()
