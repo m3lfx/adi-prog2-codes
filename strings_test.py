@@ -67,4 +67,8 @@ def main():
         print(string1, 'contains characters other than digits.')
 
 # # Call the main function.
+
+    date_string = '11/26/2018'
+    date_list = date_string.split('/')
+    print(date_list)
 main()
