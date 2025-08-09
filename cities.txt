@@ -1,1 +1,6 @@
-New York	Boston	Atlanta	Dallas	houston	gentri	
+New York
+Boston
+Atlanta
+Dallas
+houston
+gentri

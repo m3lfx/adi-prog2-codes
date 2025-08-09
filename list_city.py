@@ -9,7 +9,7 @@ def main():
 
     for item in cities:
         # outfile.write(item + '\n')
-        outfile.write(f"{item}\t")
+        outfile.write(f"{item}\n")
 
 
     # Close the file.
