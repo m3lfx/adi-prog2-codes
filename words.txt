@@ -1,8 +1,4 @@
-the
-quick
-brown
-fo
-jumps
-search
-and
-result
+one
+two
+tri
+thequickbrownfoxjumpsoverthelazydog
