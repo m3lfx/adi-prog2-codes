@@ -53,5 +53,18 @@ def main():
     last_name = full_name[-5:]
     print(last_name)
 
+    text = 'Four score and seven years ago'
+    if 'Seven' not in text:
+        print('The string "seven" was found.')
+    else:
+        print('The string "seven" was not found.')
+    
+
+    string1 = 'abcde34'
+    if string1.isalnum():
+        print(string1, 'contains only alpha numeric.')
+    else:
+        print(string1, 'contains characters other than digits.')
+
 # # Call the main function.
 main()
