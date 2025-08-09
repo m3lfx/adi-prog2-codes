@@ -3,7 +3,7 @@ def main():
     numbers = get_values()
     # Display the values in the list.
     print('The numbers in the list are:')
-    print(numbers)
+    print(numbers, len(numbers))
 
 def get_values():
     # Create an empty list.
