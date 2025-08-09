@@ -46,9 +46,7 @@ def read_expense_file():
     return expense_list
 
 def create_pie(expenses):
-    
     slice_labels = ['Rent', 'Gas', 'food', 'clothes', 'car payment', 'misc']
-
     plt.pie(expenses, labels=slice_labels)
 
     # Add a title.
@@ -56,7 +54,5 @@ def create_pie(expenses):
 
     # Display the pie chart.
     plt.show()
-
-
-
+    
 main()
