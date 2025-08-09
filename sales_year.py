@@ -6,7 +6,7 @@ def main():
     y_coords = [0, 1, 2, 3,4,5,3]
 
     # Build the line graph.
-    plt.plot(x_coords, y_coords)
+    plt.plot(x_coords, y_coords, marker='v')
 
     # Add a title.
     plt.title('Sales by Year')
