@@ -19,8 +19,8 @@ def main():
             # of the file has been reached.
             end_of_file = True
 
-        # Close the file.
-        input_file.close()
+            # Close the file.
+            input_file.close()
         
 # The display_data function displays the person data
 # in the dictionary that is passed as an argument.
