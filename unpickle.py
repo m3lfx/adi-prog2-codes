@@ -11,6 +11,7 @@ def main():
         try:
             # Unpickle the next object.
             person = pickle.load(input_file)
+            
 
             # Display the object.
             display_data(person)
