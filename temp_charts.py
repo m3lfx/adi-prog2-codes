@@ -14,7 +14,8 @@ def main():
     years = int(input(f"Enter the number of years starting from {start}  : "))
     filename = "temp_data.csv"
     # write_temp_csv(filename, start, years)
-    average_temperature_per_year(filename)
+    temp_years, ave_temps = average_temperature_per_year(filename)
+    print(temp_years, ave_temps)
 
 def write_temp_csv(filename, start, years):
     # print(filename, start, years)
@@ -46,10 +47,31 @@ def average_temperature_per_year(filename):
     
     reader = csv.reader(temperature_file)
     header = next(reader)  # Skip header
-    print(header)
+    # print(header)
     years = []
     temps = []
     avg_temp = []
+
+    for row in reader:
+        if not row or len(row) < 13:
+            continue
+        # print(row[1:])
+        # print(row[0])
+        years.append(row[0])
+
+        for temp in row[1:]:
+            # print(temp)
+            temps.append(float(temp))
+        avg = sum(temps) / len(temps)
+        # print(temps)
+        # print(avg)
+        avg_temp.append(round(avg,2))
+        print(avg_temp)
+
+    return years, avg_temp
+    
+
+    # print(years)
 
 # def create_graph():
 
