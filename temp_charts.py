@@ -16,6 +16,7 @@ def main():
     # write_temp_csv(filename, start, years)
     temp_years, ave_temps = average_temperature_per_year(filename)
     print(temp_years, ave_temps)
+    create_line_chart(temp_years, ave_temps)
 
 def write_temp_csv(filename, start, years):
     # print(filename, start, years)
@@ -73,7 +74,12 @@ def average_temperature_per_year(filename):
 
     # print(years)
 
-# def create_graph():
+def create_line_chart(years_label, temp_ave_data):
+    plt.plot(years_label, temp_ave_data, linestyle='-', color='y', marker='o')
+    plt.xlabel("Years")
+    plt.ylabel("Average Temperature")
+    plt.grid(True)
+    plt.show()
 
 
 main()
