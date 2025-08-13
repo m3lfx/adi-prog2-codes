@@ -13,12 +13,39 @@ def main():
     start = int(input("Enter starting year   : "))
     years = int(input(f"Enter the number of years starting from {start}  : "))
     filename = "temp_data.csv"
+    write_temp_csv(filename, start, years)
+
 def write_temp_csv(filename, start, years):
+    # print(filename, start, years)
+    header = ["Year"] + MONTHS
+    print(header)
+    temperature_file = open(filename, 'w', newline='')
+    print(" ".join(header) + "\n")
+  
+    temperature_file.write(" ".join(header) + "\n")
+    writer = csv.writer(temperature_file)
+
+    for i in range(years):
+        year = start + i
+        print(f"\nEntering data for Year {year}:")
+        temps = []
+        for month in MONTHS:
+            temp = input(f"Enter temperature for {month}: ")
+            temps.append(temp)
+        print(temps)
+        writer.writerow([year] + temps)
+        print(f"\nData written to {filename}")
+        temperature_file.close()
+    
     
 
-def read_temp_csv(filename):
+    # writer = csv.writer(temperature_file)
+    # writer.writerow(header)
+    
 
-def create_graph():
+# def read_temp_csv(filename):
+
+# def create_graph():
 
 
-main():
+main()
