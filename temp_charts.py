@@ -69,6 +69,7 @@ def average_temperature_per_year(filename):
         avg_temp.append(round(avg,2))
         print(avg_temp)
 
+    temperature_file.close()
     return years, avg_temp
     
 
