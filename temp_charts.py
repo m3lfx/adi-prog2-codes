@@ -12,8 +12,9 @@ MONTHS = [
 def main():
     start = int(input("Enter starting year   : "))
     years = int(input(f"Enter the number of years starting from {start}  : "))
-
+    filename = "temp_data.csv"
 def write_temp_csv(filename, start, years):
+    
 
 def read_temp_csv(filename):
 
