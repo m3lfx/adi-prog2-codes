@@ -26,13 +26,15 @@ class MyGUI:
         self.area_label.pack(side='left')
 
         self.area_result = tkinter.Label(self.area_result_frame, )
-        self.area_result = tkinter.StringVar() # To update avg_label
+        # self.area_result = tkinter.StringVar() # To update avg_label
         
         self.area_result.pack(side='left')
        
 
         # Create and pack the button widgets.
         self.area_button = tkinter.Button(self.button_frame, text='get area', command=lambda: self.get_area(self.radius_entry.get(), self.area_label))
+
+
         self.quit_button = tkinter.Button(self.button_frame, text='Quit', command=self.main_window.destroy)
         self.area_button.pack(side='left')
         self.quit_button.pack(side='left')
