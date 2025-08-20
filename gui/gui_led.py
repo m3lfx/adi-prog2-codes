@@ -2,11 +2,14 @@ import pyfirmata2
 import time
 import tkinter as tk
 
-port = 'COM3'  # Windows
+port = 'COM5'  # Windows
 
 board = pyfirmata2.Arduino(port)
-led_pin = board.get_pin('d:12:o')  # Use pin 13
 
+led_pin = board.get_pin('d:11:o')  # Use pin 12
+
+HIGH = 1
+LOW = 0
 class MyGUI:
     def __init__(self):
         # Create the main window widget.
@@ -29,10 +32,10 @@ class MyGUI:
         tk.mainloop()
 
     def turn_on_led(self):
-        led_pin.write(1)
+        led_pin.write(HIGH)
 
     def turn_off_led(self):
-        led_pin.write(0)
+        led_pin.write(LOW)
 
     def on_closing(self):
         self.turn_off_led()

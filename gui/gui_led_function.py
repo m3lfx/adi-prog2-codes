@@ -6,7 +6,7 @@ import tkinter as tk
 
 HIGH = 1
 LOW = 0 
-port = 'COM3'# Windows
+port = 'COM5'# Windows
 
 board = pyfirmata2.Arduino(port)
 led_pin = board.get_pin('d:13:o')  # Use pin 13
