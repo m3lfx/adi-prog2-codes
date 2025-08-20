@@ -6,6 +6,7 @@ class MyGUI:
     def __init__(self):
         # Create the main window.
         self.main_window = tkinter.Tk()
+        self.main_window.geometry("400x400")
 
         # Create two frames. One for the Radiobuttons
         # and another for the regular Button widgets.

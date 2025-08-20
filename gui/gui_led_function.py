@@ -1,3 +1,5 @@
+
+
 import pyfirmata2
 import time
 import tkinter as tk
@@ -7,7 +9,7 @@ LOW = 0
 port = 'COM3'# Windows
 
 board = pyfirmata2.Arduino(port)
-led_pin = board.get_pin('d:9:o')  # Use pin 13
+led_pin = board.get_pin('d:13:o')  # Use pin 13
 led_pin_dim = board.get_pin('d:11:p') #pin pwm 3,5,6,9,10,11
 
 def turn_on_led():
