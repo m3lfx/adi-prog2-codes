@@ -1,5 +1,3 @@
-
-
 import pyfirmata2
 import time
 import tkinter as tk
@@ -38,10 +36,6 @@ def close_window():
     root.destroy()
 
 # def dim_led():
-
-
-   
-
     # for i in range(100, -1, -1):
     #     led_pin_dim.write(i/100.0)
     #     time.sleep(0.02)
