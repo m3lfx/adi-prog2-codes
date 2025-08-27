@@ -26,7 +26,7 @@ def main():
             time.sleep(10)
             
     except KeyboardInterrupt:
-        board.exit()
+        disconnect_arduino()
         temp_data, humid_data, time_data = read_data(filename)
         # print(temp_data, humid_data, time_data)
 
